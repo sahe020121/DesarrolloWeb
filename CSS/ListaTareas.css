@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+  
+h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: green;
+    color: rgb(233, 224, 224);
+}
+
+
+
+
+h5 {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px;
+}
+
+.completa {
+    text-decoration: line-through;
+    color: rgb(5, 44, 87);
+}
+
+/* DATOS */
+.datos {
+    background-color: rgb(114, 120, 126);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+
+
+/* CONTENEDOR */
+.conten {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 15px;
+}
+
+.conten .formulario {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: silver;
+    color: #f1efef;
+    max-height: 110px;
+}
+
+.conten.formulario input[type="text"] {
+    border: none;
+    padding: 8px;
+}
+
+.conten .formulario input[type="text"]:focus {
+    outline: none;
+    border-bottom: 5px solid rgb(128, 135, 145);
+    ;
+}
+
+.conten .formulario input[type="submit"] {
+    border: none;
+    padding: 10px;
+    background-color: grey;
+    color: #970d0d;
+    cursor: pointer;
+}
+
+
+
+
+/* TAREAS */
+.conten .tareas {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(87, 85, 85);
+}
+
+.conten .item-tarea {
+    display: flex;
+    justify-content: space-between;
+    background-color: slategrey;
+    padding: 10px;
+    margin: 10px 2px;
+}
+
+.eliminar {
+    border: none;
+    background-color: rgb(255, 0, 89);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform ease 300ms;
+    padding: 8px;
+}
+
+.eliminar:hover {
+    transform: scale(1.3);
+}
+
+.completada {
+    border: none;
+    background-color: rgb(6, 36, 61);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform ease 300ms;
+    padding: 8px;
+}
+
+.completada:hover {
+    transform: scale(1.3);
+}
+
+
+@media (max-width: 600px) {
+    .conten {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 15px;
+        
+    
+    }
+}
+
+#container{
+    background-color: #f8f8f8;
+    position: relative;
+    width: 90px;
+    height: 40px;
+    box-shadow: inset 4px 4px 6px #04eb18,
+                inset -4px -4px 6px #04eb18;
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 35px;
+    cursor: pointer;
+  }
+
+  .toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(.7);
+    background-color: linear-gradient(145deg,#d8d8d8,#fff);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px #cecece,
+                -3px -3px 8px #fff;
+  }
+
+  #container.active .toggle{
+    left: 40px;
+  }
+
+  html.active{
+    background-color: black;
+  }

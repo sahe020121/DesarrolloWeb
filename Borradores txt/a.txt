@@ -1,0 +1,227 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Mi pagina web</title>
+     
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <link rel="stylesheet" href="estilo.css">
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Bienvenidos a mi pagina web</h1>
+                <p>En esta pagina encontraras informacion sobre mi trabajo y proyectos</p>
+
+            </section>
+            <section>
+                <h2>Acerca de mi</h2>
+                <p>Soy un desarrollador web apasionado por la tecnologia y el diseño</p>
+            </section>
+            <section>
+                <h2>Contacto</h2>
+                <p>Puedes contactarme a travez del siguente formulario</p>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="mensaje">Mensaje:</label>
+                   <textarea id="mensaje" name="mensaje"></textarea>
+                   <button type="submit">Enviar</button> 
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Derechos reservados 2023 Mi pagina web </p>
+        </footer>
+    </body>
+</html>
+
+estilo//
+
+html {
+  background-color: #F2F2F2;
+  font-family: sans-serif;
+}
+
+p,h2,h1,label {
+  color: black;
+  text-align: center;
+}
+
+h1,h2{
+  padding: 20px 0;
+}
+
+li{
+  color: blue;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 0;
+  grid-gap: 200px;
+  background-color: #93BBBF;
+  padding: 5 20px 20px 20px;
+}
+
+.newspapers {
+ column-count: 3;
+ column-gap: 50px;
+ column-rule: 2px solid rgb(5, 5, 5);
+ column-fill: balance;
+ text-align: justify;
+ background-color: #899B9F;
+ padding: 5 20px 20px 20px;
+}
+
+form {
+  display: table;
+  margin: 0 auto;
+  padding: 30 20px 20px 20px;
+}
+
+form div {
+  display: table-row;
+}
+
+form label, form input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+form label {
+  width: 200px;
+  padding-right: 5%;
+  text-align: right;
+}
+
+form input {
+  width: 300px;
+}
+
+form button{
+  display: table-caption;
+  caption-side: bottom;
+  width: 100px;
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 10 20px 20px 20px;
+}
+
+.imagen{
+  width: 20px;
+}
+
+
+html modificado//
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Mi pagina web</title>
+     
+        
+    </head>
+    <body>
+        <link rel="stylesheet" href="estilo.css">
+        <header>
+            <nav>
+                <ul class="wrapper">
+                    
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            
+
+            <div class="columnas">
+
+                <img  class="imagen" src="superman.png" alt=""> 
+                
+                <div class="columna">
+                    <h2>Bienvenidos a mi pagina web</h1>
+                    <p>En esta pagina encontraras informacion sobre mi trabajo y proyectos</p>
+                </div>
+
+
+            <div class="columna">
+                <h2>Acerca de mi</h2>
+                <p>Soy un desarrollador web apasionado por la tecnologia y el diseño</p>
+            </div>
+
+            <div class="columna">
+                <h2>Contacto</h2>
+                <p>Puedes contactarme a travez del siguente formulario</p>
+
+            </div>
+
+            </div>
+               
+            <section>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div></div>    
+                        <label for="email">Email:</label>
+                        <input type="email" id="Email" name="email">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="Mensaje"></textarea>
+                    </div>
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <button type="submit">Enviar</button>
+               
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Derechos reservados 2023 Mi pagina web </p>
+        </footer>
+    </body>
+</html>
+
+
+

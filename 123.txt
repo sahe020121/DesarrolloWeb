@@ -1,0 +1,35 @@
+//agregar una columna 
+alter table vehiculo add precio money 
+
+
+//insertar un valor a solo un atributo
+update vehiculo set precio=20.00
+
+//
+insert into vehiculo values('bba2334',2019,'aaa','bbb',15.3,1,15.00)
+
+//modificar un registro de una placa 
+
+update vehiculo set precio=50.00 where placa='aaa1123'
+
+//aumentar el precio de un regsitro 
+
+update vehiculo set precio=(precio*0.5)+precio where placa ='aaa1123'
+
+//suma los modelos 
+select sum(precio), min (modelo) as[Año] from vehiculo 
+
+//promedio 
+
+select avg (precio) from vehiculo
+
+
+//cuanta los vehiculos de ese año 	
+select count(modelo) from vehiculo where modelo=2019
+
+//combinacion de tablas 
+
+select * from chofer c inner join vehiculo v on c.idempl
+select c.apellido,c.nombre,v.marca,v.submarca from chofer c inner join vehiculo v on c.idempl=v.idempl
+
+select * from chofer c left outer join vehiculo v on c.idempl=v.idempl select c.apellidop, c.nombre,v.marca,v.submarca from chofer c right outer join vehiculo v on c.idempl=v.idempl
